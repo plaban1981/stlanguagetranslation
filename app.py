@@ -247,10 +247,9 @@ with st.form("Translate"):
         input.to_csv('input.csv', index=False) 
         os.chmod("input.csv", 0o777)
         
-        url = "https://app.aimarketplace.co/api/marketplace/models/language-translation-05408f55/predict/"
+        url = "https://app.aimarketplace.co/api/marketplace/models/english-to-any-language-translation-363e0800/predict/"
         payload={'data': open('input.csv','rb')}
-        headers = {'Authorization': 'Api-Key tAKNfH3U.IdwJ3YhHeslMW1ts3gs3TZom5Orqfk1c'}
-
+        headers = {'Authorization': 'Api-Key CBKm3x8W.emDR9CpQAeFlNbmy3AptKsOzz73GKFDL'}
         response = requests.request("POST", url, headers=headers, files=payload)
 
         print(response.text)
