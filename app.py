@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 import os
 #
-image_path = r".\Image\image.JPG"
+image_path = "./Image/image.JPG"
 image = Image.open(image_path)
 
 st.set_page_config(page_title="Any To Any Language Translation App", layout="centered")
